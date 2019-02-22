@@ -1,0 +1,105 @@
+
+// elm 默认按钮
+.el-button--default {
+  color: rgba($color: #000000, $alpha: 0.8);
+  background-color: #F7F9FA ;
+  border-color: #d8d8d8;     
+}
+// elm 主要按钮
+.el-button--primary {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;   
+}
+
+// elm 警告按钮
+.el-button--warning {
+  color: #fff;
+  background-color: #F0B764;
+  border-color: #F0B764;   
+}
+
+// elm 危险按钮
+.el-button--danger {
+  color: #fff;
+  background-color: #E16E63;
+  border-color: #E16E63;
+}
+
+// elm 信息按钮
+.el-button--info {
+  color: #fff;
+  background-color: #333333;
+  border-color: #333333;
+}
+
+// timeline样式修改
+.el-step__title.is-wait {
+  color: rgba($color: #000000, $alpha: 0.8);
+}
+.el-step__description.is-wait {
+  color: rgba($color: #000000, $alpha: 0.4)
+}
+.el-step__icon-inner.el-icon-success {
+  color: #7ED321;
+}
+.el-step__icon-inner[class*=el-icon]:not(.is-status) {
+  font-size: 20px;
+}
+.el-step__icon-inner.el-icon-error {
+  color: #E16E63;
+}
+
+// dialog样式修改
+.el-dialog {
+  .el-dialog__header {
+    padding: 15px 20px 15px;
+    border-bottom: 1px solid #E9E9E9;
+  }
+  .el-dialog__body {
+    padding: 30px 80px 30px 40px;
+    .el-form-item__label {
+      margin-right: 35px;
+    }
+    .el-form-item__error {
+      margin-left: 35px;
+    }
+    .el-input {
+      width: 240px;
+    }
+    .el-textarea {
+      width: 240px;
+    }
+  }
+  .el-dialog__footer {
+    padding: 15px 20px 15px;
+    border-top: 1px solid #E9E9E9;
+  }
+}
+
+// dialog
+.down_dialog{
+  .el-dialog{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  border: 1px solid #E4E7ED;
+  padding: 10px 0 5px;
+  .el-dropdown-menu__item {
+    width: 100px;
+    height: 34px;
+    &:hover {
+      color: #000;
+      background-color: #F5F8FF;
+      font-size: 14px;
+    }
+  }
+}

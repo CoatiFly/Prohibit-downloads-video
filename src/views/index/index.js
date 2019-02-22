@@ -5,7 +5,7 @@ export default {
   data() {
     return {
       myPlayer: '',
-      videoSrc: require('@//static/57_0122_v01.mp4'),
+      videoSrc: '/static/57_0122_v01.mp4',
     };
   },
   mounted() {

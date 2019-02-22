@@ -13,6 +13,7 @@ export default {
   },
   methods: {
     initVideo() {
+      console.log(process.env.BASE_URL);
       // 页面禁止右键
       document.oncontextmenu = function(event){ 
         event.preventDefault(); 

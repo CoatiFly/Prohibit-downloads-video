@@ -1,7 +1,7 @@
 // webpack
 module.exports = {
   // add config alias
-  baseUrl: './',
+  publicPath: './',
   devServer: {
     proxy: {
       '/api': {

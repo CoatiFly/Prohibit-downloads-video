@@ -4,8 +4,8 @@ export default {
   data() {
     return {
       userInfo: {
-        username: 'admin',
-        password: '123456',
+        username: 'Hadmin',
+        password: 'Pvio125%',
       },
       loginBtnText: 'LOGIN',
       form: {

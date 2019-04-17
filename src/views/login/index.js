@@ -1,3 +1,4 @@
+import { mapState } from 'vuex'
 
 export default {
   name: 'Login',
@@ -15,8 +16,11 @@ export default {
       popupStatus: false,
     };
   },
+  computed: mapState({
+    ...mapState(['isPC'])
+  }),
   mounted() {
-
+    console.log(this.isPC)
   },
   methods: {
     // login

@@ -1,3 +1,4 @@
+import { mapState } from 'vuex'
 
 export default {
   name: 'Index',
@@ -8,6 +9,9 @@ export default {
       videoSrc: '/static/57_0122_v01.mp4',
     };
   },
+  computed: mapState({
+    ...mapState(['isPC'])
+  }),
   mounted() {
     this.initVideo();
   },

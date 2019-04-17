@@ -1,5 +1,5 @@
 <template>
-    <div class="video_box">
+    <div :class=" isPC ? 'video_box' : 'mobile_video_box'">
       <video id="myVideo" class="video-js vjs-big-play-centered">
         <!-- <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"> -->
         <!-- <source :src="videoSrc" type="video/mp4"> -->

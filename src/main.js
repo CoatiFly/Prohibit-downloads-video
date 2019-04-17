@@ -14,6 +14,14 @@ import './styles/index.scss';
 Vue.prototype.$tool = tools.newRouter;
 Vue.prototype.$video = Video;
 
+// is PC
+if (tools.newUtils.isPC()) {
+  store.commit("setIsPC", true);
+} else {
+  tools.remJs();
+  store.commit("setIsPC", false);
+};
+
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);

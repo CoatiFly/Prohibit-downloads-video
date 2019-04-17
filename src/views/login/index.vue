@@ -1,5 +1,5 @@
 <template>
-  <div class="login-page">
+  <div :class=" isPC ? 'login-page' : 'mobile-login-page'">
     <div class="login-form-container">
       <el-form
         class="login-form"
